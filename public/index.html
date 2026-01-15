@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Sharing UI</title>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SENT FILE BOX -->
+    <div class="card">
+        <h2>SENT FILE</h2>
+
+        <!-- File select -->
+        <input type="file" id="sendFile" multiple>
+
+
+        <!-- Keyword input -->
+        <input type="text" id="sendKey" placeholder="Enter keyword">
+
+        <!-- Send button -->
+        <button onclick="sendFile()">Send</button>
+    </div>
+
+    <!-- RECEIVE FILE BOX -->
+    <div class="card">
+        <h2>RECEIVE FILE</h2>
+
+        <!-- Keyword input -->
+        <input type="text" id="receiveKey" placeholder="Enter keyword">
+
+        <!-- Upload button -->
+        <button onclick="receiveFile()">Upload</button>
+    </div>
+
+</div>
+
+<!-- Linking JS -->
+<script src="script.js"></script>
+</body>
+</html>
